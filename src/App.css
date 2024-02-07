@@ -1,0 +1,44 @@
+.smallSidebar {
+    display: none;
+}
+
+.bigSidebar {
+    display: block;
+}
+
+.hero {
+    background: #000;
+}
+
+.test {
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+
+@media(max-width:600px) {
+    .smallSidebar {
+        display: block;
+    }
+
+    .bigSidebar {
+        background: #000;
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .landing-page {
+        flex-direction: row;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .test {
+        width: 200px;
+        height: 200px;
+        background: rgb(97, 97, 132);
+    }
+}
